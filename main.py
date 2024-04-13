@@ -27,6 +27,7 @@ async def chat_with_openai(prompt: Prompt):
             model="gpt-3.5-turbo",  # Specify the chat model you're using
             messages=[
                 {"role": "system", "content": "You are a helpful assistant."},
+                            {"role": "ai", "content": "AI: Hello! How can I Help you today?"},
                 {"role": "user", "content": prompt.text}  # Use the incoming prompt text here
             ],
             temperature=0.7,
