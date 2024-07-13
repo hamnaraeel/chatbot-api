@@ -77,7 +77,7 @@ class Prompt(BaseModel):
 
 # Your Gemini API key
 GEMINI_API_KEY = "AIzaSyAnOH3LNGA8xo43zfTkEsppoF55OMOB7N0"
-GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent"
+GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${GEMINI_API_KEY}"
 
 @app.post("/chat/")
 async def chat_with_gemini(prompt: Prompt):
