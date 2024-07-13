@@ -20,7 +20,7 @@ class Prompt(BaseModel):
 
 @app.post("/chat/")
 async def chat_with_openai(prompt: Prompt):
-    openai.api_key = "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"
+    openai.api_key = "sk-proj-AHYEGGxzVvSMs0aWsRuQT3BlbkFJ0g4vsh52Y86MtyAWUMxu"
     try:
         # Using the incoming prompt text in the messages list
         response = openai.ChatCompletion.create(
